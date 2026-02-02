@@ -1,4 +1,7 @@
 # 📊 Application de gestion de facturation – Django
+# 📊 Billing Management Application – Django
+
+## FR (Français)
 
 Application web développée avec **Django** permettant la gestion complète :
 - des clients
@@ -9,26 +12,68 @@ avec génération de documents **PDF**.
 
 ---
 
-## 🚀 Fonctionnalités principales
+## EN (English)
 
-### 🔐 Authentification & utilisateurs
+Web application developed with **Django** allowing complete management of:
+- customers
+- items and stock
+- delivery notes
+- billing (proforma invoices, standard invoices, credit notes)
+with **PDF** document generation.
+
+---
+
+## 🚀 Fonctionnalités principales | Main Features
+
+### 🔐 Authentification & utilisateurs | Authentication & Users
+
+**FR**
 - Connexion sécurisée
 - Gestion des utilisateurs (CRUD)
 - Accès protégé par authentification
 
-### 📁 Référentiels
+**EN**
+- Secure login
+- User management (CRUD)
+- Authentication-protected access
+
+---
+
+### 📁 Référentiels | Master Data
+
+**FR**
 - Gestion des clients (RC, AI, NIF, etc.)
 - Gestion des articles (prix, stock, emplacement)
 - Gestion des emplacements d’articles
 
-### 🚚 Bons de livraison
+**EN**
+- Customer management (RC, AI, NIF, etc.)
+- Item management (price, stock, location)
+- Item location management
+
+---
+
+### 🚚 Bons de livraison | Delivery Notes
+
+**FR**
 - Création de bons de livraison
 - Numérotation automatique
 - Ajout et modification des articles livrés
 - Annulation logique
 - Génération de bons de livraison en PDF
 
-### 🧾 Facturation
+**EN**
+- Delivery note creation
+- Automatic numbering
+- Add and edit delivered items
+- Logical cancellation
+- Delivery note PDF generation
+
+---
+
+### 🧾 Facturation | Invoicing
+
+**FR**
 - Factures **Proforma**, **Normales** et **Avoir**
 - Numérotation automatique selon le type
 - Facture d’avoir liée à une facture d’origine
@@ -40,18 +85,39 @@ avec génération de documents **PDF**.
 - Mise à jour automatique du stock
 - Génération de factures en PDF
 
-### 📄 Génération PDF
+**EN**
+- **Proforma**, **Standard**, and **Credit** invoices
+- Automatic numbering by invoice type
+- Credit note linked to the original invoice
+- Automatic calculation of:
+  - Net amount
+  - VAT
+  - Discount
+  - Total amount
+- Automatic stock update
+- Invoice PDF generation
+
+---
+
+### 📄 Génération PDF | PDF Generation
+
+**FR**
 - Bons de livraison en PDF
 - Factures en PDF
 - Génération avec **ReportLab**
 
+**EN**
+- Delivery notes in PDF format
+- Invoices in PDF format
+- Generated using **ReportLab**
+
 ---
 
-## 🛠️ Technologies utilisées
+## 🛠️ Technologies utilisées | Technologies Used
 
 - Python 3.x
 - Django
-- SQLite / PostgreSQL (selon configuration)
+- SQLite / PostgreSQL
 - HTML / CSS / Bootstrap
 - JavaScript (AJAX / JSON)
 - ReportLab (PDF)
@@ -64,8 +130,8 @@ avec génération de documents **PDF**.
 git clone https://github.com/ton-username/gestion-facturation.git
 cd gestion-facturation
 python -m venv venv
-source venv/bin/activate  # Linux / Mac
-venv\Scripts\activate     # Windows
+source venv/bin/activate   # Linux / Mac
+venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 python manage.py migrate
 python manage.py createsuperuser
