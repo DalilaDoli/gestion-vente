@@ -81,8 +81,8 @@ DATABASES = {
         'NAME': 'gestion_vente',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',  # L'emplacement de votre serveur MySQL, généralement localhost pour le développement en local.
-        'PORT': '3306',       # Le port sur lequel MySQL fonctionne généralement, 3306 par défaut.
+        'HOST': 'localhost',  
+        'PORT': '3306',      
         'OPTIONS': {'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"}
     }
 }

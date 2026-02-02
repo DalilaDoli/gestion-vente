@@ -11,7 +11,6 @@
     <div class="container-fluid">
        
         <div class="row">
-                <!-- Ajoutez ces balises où vous voulez afficher les onglets -->
             <ul class="nav nav-tabs" id="myTabs" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link  font-weight-bold text-dark" id="proforma-tab" data-toggle="tab" href="#proforma" role="tab" aria-controls="proforma" aria-selected="true">Factures Proforma</a>
@@ -24,11 +23,9 @@
                 </li>
             </ul>
         
-            <!-- Ajoutez ces divs pour afficher le contenu des onglets -->
             <div class="container-fluid">
                 <div class="tab-content" id="myTabsContent">
                     <div class="tab-pane fade" id="proforma" role="tabpanel" aria-labelledby="proforma-tab">
-                        <!-- Contenu du tableau Factures Proforma ici -->
                     
                         <div class="col-sm-12 mt-5 mb-5">
                             <div class="card shadow mb-4">
@@ -101,10 +98,8 @@
                         
                     </div>
                     <div class="tab-pane fade show active" id="normale" role="tabpanel" aria-labelledby="normale-tab">
-                        <!-- Contenu du tableau Factures Normales ici -->
                         <div class="col-sm-12 mt-5 mb-5">
                             <div class="card shadow mb-4">
-                                <!-- Reproduisez le contenu du premier tableau ici et adaptez-le selon vos besoins -->
                                 <div class="card-header  py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Liste des Factures</h6>
                                     <div class="ml-auto">
@@ -173,10 +168,8 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="avoir" role="tabpanel" aria-labelledby="avoir-tab">
-                        <!-- Contenu du tableau Factures d'Avoir ici -->
                         <div class="col-sm-12 mt-5 mb-5">
                             <div class="card shadow mb-4">
-                                <!-- Reproduisez le contenu du premier tableau ici et adaptez-le selon vos besoins -->
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between ">
                                     <h6 class="m-0 font-weight-bold text-primary">Listes des Factures d'avoir</h6>
                                     <div class="ml-auto">
@@ -378,7 +371,6 @@
     
                     </div>
             </div>
-            <!-- /.card-body -->
     
             <div class="card-footer">
                 <button type="submit" class="btn btn bg-gradient-info  text-light ml-2" id="ajouterfacturation" style="display: none">Ajouter</button>
@@ -493,7 +485,6 @@
 
         </div> 
     </div>
-    <!-- Ajoutez ces scripts JavaScript à la fin de votre page HTML -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script> function detailfactureoriginal(numfac,numfacid,montantht,montttc,client)
 {

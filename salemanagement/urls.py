@@ -7,7 +7,8 @@ from . import views
 urlpatterns = [
     path('login/', auth_views.LoginView.as_view(), name='login'),
     path('logout/', LogoutView.as_view(), name='logout'),
-    path('', login_required(views.index), name="index"),    path('form/', views.form,name="form"),
+    path('', login_required(views.index), name="index"),
+    path('form/', views.form,name="form"),
     # url client
     path('client/',login_required(views.indexclient),name="indexclient"),
     path('addclient/', views.addclient,name="addclient"),

@@ -1,0 +1,72 @@
+# 📊 Application de gestion de facturation – Django
+
+Application web développée avec **Django** permettant la gestion complète :
+- des clients
+- des articles et du stock
+- des bons de livraison
+- de la facturation (proforma, facture normale, facture d’avoir)
+avec génération de documents **PDF**.
+
+---
+
+## 🚀 Fonctionnalités principales
+
+### 🔐 Authentification & utilisateurs
+- Connexion sécurisée
+- Gestion des utilisateurs (CRUD)
+- Accès protégé par authentification
+
+### 📁 Référentiels
+- Gestion des clients (RC, AI, NIF, etc.)
+- Gestion des articles (prix, stock, emplacement)
+- Gestion des emplacements d’articles
+
+### 🚚 Bons de livraison
+- Création de bons de livraison
+- Numérotation automatique
+- Ajout et modification des articles livrés
+- Annulation logique
+- Génération de bons de livraison en PDF
+
+### 🧾 Facturation
+- Factures **Proforma**, **Normales** et **Avoir**
+- Numérotation automatique selon le type
+- Facture d’avoir liée à une facture d’origine
+- Calcul automatique :
+  - Montant HT
+  - TVA
+  - Remise
+  - Montant TTC
+- Mise à jour automatique du stock
+- Génération de factures en PDF
+
+### 📄 Génération PDF
+- Bons de livraison en PDF
+- Factures en PDF
+- Génération avec **ReportLab**
+
+---
+
+## 🛠️ Technologies utilisées
+
+- Python 3.x
+- Django
+- SQLite / PostgreSQL (selon configuration)
+- HTML / CSS / Bootstrap
+- JavaScript (AJAX / JSON)
+- ReportLab (PDF)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/ton-username/gestion-facturation.git
+cd gestion-facturation
+python -m venv venv
+source venv/bin/activate  # Linux / Mac
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
